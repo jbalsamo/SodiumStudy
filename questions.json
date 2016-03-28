@@ -1,0 +1,94 @@
+[
+  {
+    "study": "Sodium",
+    "order": 1,
+    "type": "eligibility",
+    "question": "Are you 21 years old or older?",
+    "answers": [
+      {
+        "value": "Yes",
+        "action": "Continue"
+      },
+      {
+        "value": "No",
+        "action": "Disqualify"
+      }
+    ]
+  },
+  {
+    "study": "Sodium",
+    "order": 2,
+    "type": "eligibility",
+    "question": "Do you have Heart Failure (weak heart) as confirmed by a physician?",
+    "answers": [
+      {
+        "value": "Yes",
+        "action": "Continue"
+      },
+      {
+        "value": "No",
+        "action": "Disqualify"
+      },
+      {
+        "value": "I don't know",
+        "action": "Contact"
+      }
+    ]
+  },
+  {
+    "study": "Sodium",
+    "order": 3,
+    "type": "eligibility",
+    "question": "Are you able to visit a Stony Brook Medicine Facility five times in a time period of 6 months? (approximately once a month, visit lasts 30')?",
+    "answers": [
+      {
+        "value": "Yes",
+        "action": "Continue"
+      },
+      {
+        "value": "No",
+        "action": "Disqualify"
+      }
+    ]
+  },
+  {
+    "study": "Sodium",
+    "order": 4,
+    "type": "eligibility",
+    "question": "Are you able to consume a regular meal plan?",
+    "answers": [
+      {
+        "value": "Yes",
+        "action": "Continue"
+      },
+      {
+        "value": "No",
+        "action": "Disqualify"
+      },
+      {
+        "value": "I don't know",
+        "action": "Contact"
+      }
+    ]
+  },
+  {
+    "study": "Sodium",
+    "order": 5,
+    "type": "eligibility",
+    "question": "Is your Systolic blood pressure (the higher of the two numbers) greater than 100 mmHg?",
+    "answers": [
+      {
+        "value": "Yes",
+        "action": "Continue"
+      },
+      {
+        "value": "No",
+        "action": "Disqualify"
+      },
+      {
+        "value": "I don't know",
+        "action": "Contact"
+      }
+    ]
+  }
+]
