@@ -3,8 +3,9 @@ AppJS = React.createClass({
     getInitialState() {
         return {
             step: 1,
-            study: "Sodium",
-            sponsor: "Department of Cardiology",
+            study: "Prohibit Sodium Research",
+            studyQuery: "Sodium",
+            sponsor: "Stony Brook Medicine Heart Institute",
             eligible: "Continue"
         }
     },
@@ -22,8 +23,8 @@ AppJS = React.createClass({
         var projectiona = { "answers":1, "_id":0 };
 
         Meteor.subscribe("questions");
-        query = { "order": this.state.step, "study": this.state.study };
-        queryCnt = { "study": this.state.study };
+        query = { "order": this.state.step, "study": this.state.studyQuery };
+        queryCnt = { "study": this.state.studyQuery };
 
         return {
             question: Questions.findOne(query, projectionq),
