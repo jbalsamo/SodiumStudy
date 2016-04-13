@@ -5,7 +5,7 @@ EQuestions = React.createClass({
         // Get tasks from this.props.answers
         console.log("Building Answer list");
         return this.props.answers.map((answer) => {
-            return <Answer onClick={this.props.nextStep} key={this.props.step + answer.value} answer={answer} answerClassName="answer" />
+            return <Answer nextStep={this.props.nextStep} isDisqual={this.props.isDisqual} toContact={this.props.toContact} key={this.props.step + answer.value} answer={answer} answerClassName="answer" />
         });
     },
     render() {

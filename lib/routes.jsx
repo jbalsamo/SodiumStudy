@@ -5,7 +5,7 @@ FlowRouter.route("/", {
     }
 })
 
-FlowRouter.route("/join", {
+FlowRouter.route("/join/", {
     name: "AppJS",
     action(params) {
         ReactLayout.render(AppJS);

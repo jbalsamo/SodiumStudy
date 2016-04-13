@@ -1,6 +1,6 @@
 var introDoc = [
     {
-        stepTitle: "Welcome to the Prohibit Sodium Research Study",
+        stepTitle: "Welcome to the Sodium Intake Research Study",
         body: "",
         links: [
             {
@@ -35,7 +35,7 @@ Home = React.createClass({
     getInitialState() {
         return {
             introstep: 1,
-            study: "Prohibit Sodium Research",
+            study: "Sodium Intake and Heart Disease",
             sponsor: "Stony Brook Medicine Heart Institute",
         }
     },
@@ -45,12 +45,21 @@ Home = React.createClass({
             introstep: this.state.introstep + 1
         });
     },
+    decrStep() {
+        console.log("Decrement intro Steps");
+        if (this.state.introstep > 1) {
+            this.setState({
+                introstep: this.state.introstep - 1
+            });
+        }
+    },
     render() {
         if (this.state.introstep <= introDoc.length) {
             return (
             <div>
                 <Header study={this.state.study} sponsor={this.state.sponsor} />
-                <IntroStep incrStep={this.incrStep} step={this.state.introstep} introDoc={introDoc} />
+                <IntroStep incrStep={this.incrStep} decrStep={this.decrStep} step={this.state.introstep} introDoc={introDoc} />
+                <Footer />
             </div>
         )} else {
             return(
@@ -58,6 +67,7 @@ Home = React.createClass({
                     <Header study={this.state.study} sponsor={this.state.sponsor} />
                     <Splash />
                     <JoinStudy study="Sodium" />
+                    <Footer />
                 </div>
 
             )}

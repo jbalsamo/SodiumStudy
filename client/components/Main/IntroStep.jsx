@@ -7,7 +7,7 @@ IntroStep = React.createClass({
                 </div>
                 <div className="introBody" dangerouslySetInnerHTML={{ __html: this.props.introDoc[this.props.step-1].body}}></div>
                 <div className="text-center">
-                    <button onClick={this.props.incrStep}>Next</button>
+                    <img className="imgButton" onClick={this.props.decrStep} src="images/BK-Icon.png" /> <button className="css_btn_class navButton" onClick={this.props.incrStep}>Next</button>
                 </div>
             </div>
         )

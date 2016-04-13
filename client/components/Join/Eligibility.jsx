@@ -1,20 +1,20 @@
 Eligibility = React.createClass({
     render() {
-        if (this.props.eligible = "Continue") {
+        if (this.props.eligible == "Continue") {
             return (
-                <div>
+                <div className="studyStatus">
                     Eligible.
                 </div>
             )
-        } else if (this.props.eligible = "Disqualify") {
+        } else if (this.props.eligible == "Disqualify") {
             return (
-                <div>
+                <div className="studyStatus">
                     Disqualified!
                 </div>
             )
         } else {
             return (
-                <div>
+                <div className="studyStatus">
                     Please, contact us.
                 </div>
             )

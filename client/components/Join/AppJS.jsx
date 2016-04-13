@@ -16,6 +16,16 @@ AppJS = React.createClass({
             step: this.state.step + 1
         });
     },
+    isDisqual() {
+        this.setState({
+            eligible: "Disqualify"
+        });
+    },
+    toContact() {
+        this.setState({
+            eligible: "Contact"
+        });
+    },
     getMeteorData() {
         var query = {};
         var queryCnt = {};
@@ -38,8 +48,9 @@ AppJS = React.createClass({
             return (
                 <div>
                     <Header study={this.state.study} sponsor={this.state.sponsor}/>
-                    <EQuestions nextStep={this.nextStep} step={this.state.step} question={this.data.question}
-                                answers={this.data.answers.answers} quesCount={this.data.quesCount}/>
+                    <EQuestions nextStep={this.nextStep} isDisqual={this.isDisqual} toContact={this.toContact} step={this.state.step} 
+                                question={this.data.question} answers={this.data.answers.answers} quesCount={this.data.quesCount}/>
+                    <Footer />
                 </div>
             )
         } else {
@@ -47,6 +58,7 @@ AppJS = React.createClass({
                 <div>
                     <Header study={this.state.study} sponsor={this.state.sponsor}/>
                     <Eligibility eligible={this.state.eligible} />
+                    <Footer />
                 </div>
             )
         }
