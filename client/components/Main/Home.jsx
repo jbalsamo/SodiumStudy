@@ -15,7 +15,27 @@ var introDoc = [
     },
     {
         stepTitle: "About the Study",
-        body: "<p> You are being asked to participate in the PROHIBIT SODIUM study conducted at Stony Brook Medicine. </p> <p>This app is designed for informative purposes only. You should not rely on this information as a substitute for personal medical treatment. If you are concerned about your health, please consult your primary health provider, or if there is a medical emergency call immediately 911.</p>",
+        body: "<p> You are being asked to participate in the PROHIBIT SODIUM study conducted at Stony Brook Medicine. </p>",
+        links: [
+            {
+                text: "Learn More...",
+                hyperlink: ""
+            }
+        ]
+    },
+    {
+        stepTitle: "About the Study",
+        body: "<p>This app is designed for informative purposes only. You should not rely on this information as a substitute for personal medical treatment. </p>",
+        links: [
+            {
+                text: "Learn More...",
+                hyperlink: ""
+            }
+        ]
+    },
+    {
+        stepTitle: "About the Study",
+        body: "<p> If you are concerned about your health, please consult your primary health provider, or if there is a medical emergency call immediately 911.</p>",
         links: [
             {
                 text: "Learn More...",
