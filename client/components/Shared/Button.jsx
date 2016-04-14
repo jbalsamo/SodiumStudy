@@ -3,7 +3,7 @@ Button = React.createClass({
         if (this.props.btype == "image") {
             return(
                 <button className={this.props.buttonClass} onClick={this.props.myOnClick}>
-                    <img src={this.props.bvalue} />
+                    <img className={this.props.imgClass} src={this.props.bvalue} />
                 </button>
             )
         } else {

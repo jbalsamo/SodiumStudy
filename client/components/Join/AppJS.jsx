@@ -16,6 +16,15 @@ AppJS = React.createClass({
             step: this.state.step + 1
         });
     },
+
+    decrStep() {
+        console.log("Incremmenting");
+        if(this.state.step > 1) {
+            this.setState({
+                step: this.state.step - 1
+            });
+        }
+    },
     isDisqual() {
         this.setState({
             eligible: "Disqualify"
@@ -48,7 +57,7 @@ AppJS = React.createClass({
             return (
                 <div>
                     <Header study={this.state.study} sponsor={this.state.sponsor}/>
-                    <EQuestions nextStep={this.nextStep} isDisqual={this.isDisqual} toContact={this.toContact} step={this.state.step} 
+                    <EQuestions nextStep={this.nextStep} decrStep={this.decrStep} isDisqual={this.isDisqual} toContact={this.toContact} step={this.state.step}
                                 question={this.data.question} answers={this.data.answers.answers} quesCount={this.data.quesCount}/>
                     <Footer />
                 </div>

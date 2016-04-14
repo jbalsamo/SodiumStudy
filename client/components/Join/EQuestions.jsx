@@ -21,6 +21,9 @@ EQuestions = React.createClass({
                     <div className={answersClassName}>
                         {this.renderAnswers()}
                     </div>
+                    <div>
+                        <Button btype="image" imgClass="imgButton" buttonClass="noBorderImg" myOnClick={this.props.decrStep} bvalue="images/BK-Icon.png" />
+                    </div>
                 </div>
             </div>
         )
